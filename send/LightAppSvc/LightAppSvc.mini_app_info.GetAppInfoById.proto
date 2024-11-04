@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message Body {
+    uint64 type = 1; //105
+    string qua = 2;
+    string devices = 3; //""
+    List list = 4;
+    string field5 = 5; //""
+
+    message List {
+        string appid = 2; //必填
+        uint64 field3 = 3; //1
+        uint64 field4 = 4; //0
+        bytes field5 = 5; //{}
+        bytes field6 = 6; //{}
+        bytes field7 = 7; //{}
+    }
+}
